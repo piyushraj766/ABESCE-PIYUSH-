@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Style Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2874f0;
+      margin-right: 20px;
+    }
+
+    .search-box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      outline: none;
+      background: #7b1717;
+      border-radius: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      margin-left: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      background: #fff;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .categories div {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .categories img {
+      width: 40px;
+      height: 40px;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Flipkart</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search for Products, Brands and More">
+    </div>
+    <div class="nav-links">
+      <a href="#">Login</a>
+      <a href="#">Cart</a>
+      <a href="#">Become a Seller</a>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/shopping-cart.png" alt="">
+      Minutes
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/smartphone.png" alt="">
+      Mobiles & Tablets
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/clothes.png" alt="">
+      Fashion
+    </div>
+    <div>
+      <img src="https://imgs.search.brave.com/hOhhAwJASYfCCE9BIBm5xIXXmneo1YeZRDpJp3K6EWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvZWNvLWVsZWN0/cm9uaWNzLWxvZ28t/Y3JlYXRpdmUtbW9k/ZXJuLXNpbXBsZS1k/ZXNpZ25fNTU2ODQ1/LTgxMy5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQw" alt="">
+      Electronics
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/sofa.png" alt="">
+      Home & Furniture
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/tv.png" alt="">
+      TVs & Appliances
+    </div>
+    <div>
+      <img src="https://imgs.search.brave.com/O_oKOEwK6yPINI-wZpQgrboGfHl-2VmtWhY40T3tEU0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmRlc2lnbi5j/b20vYXNzZXQvbG9n/by8yZTdiODM0Ni1l/MDQxLTRmYmQtYThh/Zi01MTEzMWJmZWJj/ZWYvbG9nbz9sb2dv/VGVtcGxhdGVWZXJz/aW9uPTEmdj02Mzg1/ODcyNTkwNjY2MzAw/MDA" alt="">
+      Flight Bookings
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/teddy-bear.png" alt="">
+      Beauty, Food..
+    </div>
+    <div>
+      <img src="https://imgs.search.brave.com/NLOnHJJ9-ufasftcJvtTDJZoPrkG4kbNWyCS7AD61VU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbGFj/ZWl0LWltZy0xLXAu/Y2RuLmF3cy5wbGFj/ZWl0Lm5ldC91cGxv/YWRzL3N0YWdlL3N0/YWdlX2ltYWdlLzU3/Mjk4L29wdGltaXpl/ZF9sYXJnZV90aHVt/Yl9zdGFnZS5qcGc" alt="">
+      Grocery
+    </div>
+  </div>
+
+</body>
+</html>

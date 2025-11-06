@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator</title>
+  <style>
+    body {
+      font-family: 'arial', sans-serif;
+      background: linear-gradient(pink, #ACB6E5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: grey;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #ed1111;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #222;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Simple Interest Calculator</h2>
+    <form onsubmit="calculateSI(event)">
+      <input type="number" id="principal" placeholder="Enter Principal (P)" required><br>
+      <input type="number" id="rate" placeholder="Enter Rate (%)" required><br>
+      <input type="number" id="time" placeholder="Enter Time (Years)" required><br>
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculateSI(event) {
+      event.preventDefault();
+      
+      let p = parseFloat(document.getElementById("principal").value);
+      let r = parseFloat(document.getElementById("rate").value);
+      let t = parseFloat(document.getElementById("time").value);
+      
+    
+      let si = (p * r * t) / 100;
+
+      document.getElementById("result").innerText = `Simple Interest = ₹${si.toFixed(2)}`;
+    }
+  </script>
+
+</body>
+</html>
